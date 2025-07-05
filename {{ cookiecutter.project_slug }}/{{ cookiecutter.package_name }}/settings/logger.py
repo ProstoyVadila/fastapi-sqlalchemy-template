@@ -24,6 +24,7 @@ class InterceptHandler(logging.Handler):
         )
 
 
+{% raw %}
 if config.is_prod:
     LOG_FORMAT = (
         "{{"
@@ -42,6 +43,7 @@ else:
         "<cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - "
         "<level>{message}</level>"
     )
+{% endraw %}
 
 logger.remove()
 logger.add(sys.stdout, level=config.log.level, format=LOG_FORMAT, enqueue=True)
