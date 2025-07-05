@@ -1,6 +1,7 @@
 # FastAPI application template
 
-This is a cookiecutter template of FastAPI application with SQLAlchemy for PostgreSQL. It contains ready `Dockerfile` and `compose.yaml`, default routes, configured custom logger (based on loguru) ready for development and production, some useful utils and common general code.
+A Cookiecutter template for building FastAPI applications with SQLAlchemy and PostgreSQL.
+Includes a ready-to-use Dockerfile and docker-compose.yaml, preconfigured default routes, a custom logger based on Loguru (optimized for both development and production), as well as helpful utilities and common boilerplate code.
 
 ## Quick Start
 
