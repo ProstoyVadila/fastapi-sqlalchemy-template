@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Env files
+*.env
+
+# Tests
+.pytest_cache/
+
+# Linters
+.ruff_cache/
+
+# Logs
+logs/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Postgres data
+postgres_data/

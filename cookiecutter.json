@@ -1,0 +1,7 @@
+{
+  "project_name": "FastAPI SQLAlchemy Template",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "package_name": "{{ cookiecutter.project_slug }}",
+  "description": "A FastAPI application with PostgreSQL database",
+  "author": "Vadim Gorbachev"
+}

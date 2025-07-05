@@ -1,0 +1,35 @@
+[project]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.0.1"
+authors = ["{{ cookiecutter.author }}"]
+description = "{{ cookiecutter.description }}"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.16.2",
+    "async-lru>=2.0.5",
+    "asyncpg>=0.30.0",
+    "click>=8.2.1",
+    "fastapi[standard]>=0.115.14",
+    "h11>=0.16.0",
+    "httpx>=0.28.1",
+    "loguru>=0.7.3",
+    "orjson>=3.10.18",
+    "prometheus-fastapi-instrumentator>=7.1.0",
+    "pydantic-settings>=2.10.1",
+    "python-dotenv>=1.1.1",
+    "sqlalchemy[asyncio]>=2.0.41",
+    "uvicorn[standard]>=0.35.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+    "pytest-cov>=6.2.1",
+    "ruff>=0.12.2",
+]
+
+
+[tool.setuptools.packages.find]
+include = ["{{ cookiecutter.package_name }}*"]
